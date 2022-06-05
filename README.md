@@ -35,17 +35,13 @@ apt-get install libglib2.0-bin= 2.33.12+really2.32.4-5
 ``gfortran`` is used for building  ``mpich`` and ``ninja`` is used for building``llvm``
 
 ```
-   apt-get install gfortran
-   apt-get install ninja-build
-   apt-get install re2c
+apt-get install gfortran
+apt-get install ninja-build
+apt-get install re2c
 ```
  also, make sure the ``nvcc -V`` output the ``CUDA version >=10.1``. As for the driver version:``<= 450.36``. In my case, I am using a ``Geforce GTX 1080 Ti`` card :
 
 <img src="pics/image-20220605135028938.png" alt="image-20220605135028938" style="zoom:67%;" />
-
-```text
-
-```
 
 ## mpich
 
