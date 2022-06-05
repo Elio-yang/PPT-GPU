@@ -1,0 +1,251 @@
+ld.param.u32 
+mov.u32 
+shl.b32 1 
+mov.u32 
+add.s32 2 3 
+setp.ge.s32 4 0 
+bra 
+ld.param.u64 
+cvta.to.global.u64 7 
+cvt.s64.s32 4 
+add.s64 8 9 
+ld.global.u8 10 
+setp.eq.s16 11 
+bra 
+ld.param.u64 
+cvta.to.global.u64 14 
+mov.u16 
+st.global.u8 16 10 
+shl.b64 9 
+add.s64 15 18 
+ld.global.u32 19 
+setp.lt.s32 20 
+bra 
+ld.param.u64 
+cvta.to.global.u64 23 
+ld.param.u64 
+ld.param.u64 
+cvta.to.global.u64 26 
+ld.param.u64 
+cvta.to.global.u64 28 
+cvta.to.global.u64 25 
+add.s64 19 
+ld.global.u32 19 
+shl.b64 9 
+add.s64 24 33 
+mul.wide.s32 32 
+add.s64 30 35 
+mov.u16 
+mov.u32 32 
+bra.uni 
+ld.global.s32 36 
+add.s64 27 40 
+ld.global.u8 41 
+setp.ne.s16 42 
+bra 
+add.s64 29 40 
+shl.b64 40 
+add.s64 24 46 
+ld.global.u32 34 
+add.s32 48 
+st.global.u32 49 47 
+st.global.u8 37 45 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 38 
+add.s32 53 52 
+add.s64 36 
+setp.lt.s32 55 56 
+bra 
+bra.uni 
+ld.global.s32 57 
+add.s64 27 61 
+ld.global.u8 62 
+setp.ne.s16 63 
+bra 
+add.s64 29 61 
+shl.b64 61 
+add.s64 24 67 
+ld.global.u32 34 
+add.s32 69 
+st.global.u32 70 68 
+st.global.u8 37 66 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 55 
+add.s32 74 73 
+add.s64 57 
+setp.lt.s32 76 77 
+bra 
+bra.uni 
+ld.global.s32 78 
+add.s64 27 82 
+ld.global.u8 83 
+setp.ne.s16 84 
+bra 
+add.s64 29 82 
+shl.b64 82 
+add.s64 24 88 
+ld.global.u32 34 
+add.s32 90 
+st.global.u32 91 89 
+st.global.u8 37 87 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 76 
+add.s32 95 94 
+add.s64 78 
+setp.lt.s32 97 98 
+bra 
+bra.uni 
+ld.global.s32 99 
+add.s64 27 103 
+ld.global.u8 104 
+setp.ne.s16 105 
+bra 
+add.s64 29 103 
+shl.b64 103 
+add.s64 24 109 
+ld.global.u32 34 
+add.s32 111 
+st.global.u32 112 110 
+st.global.u8 37 108 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 97 
+add.s32 116 115 
+add.s64 99 
+setp.lt.s32 118 119 
+bra 
+bra.uni 
+ld.global.s32 120 
+add.s64 27 124 
+ld.global.u8 125 
+setp.ne.s16 126 
+bra 
+add.s64 29 124 
+shl.b64 124 
+add.s64 24 130 
+ld.global.u32 34 
+add.s32 132 
+st.global.u32 133 131 
+st.global.u8 37 129 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 118 
+add.s32 137 136 
+add.s64 120 
+setp.lt.s32 139 140 
+bra 
+bra.uni 
+ld.global.s32 141 
+add.s64 27 145 
+ld.global.u8 146 
+setp.ne.s16 147 
+bra 
+add.s64 29 145 
+shl.b64 145 
+add.s64 24 151 
+ld.global.u32 34 
+add.s32 153 
+st.global.u32 154 152 
+st.global.u8 37 150 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 139 
+add.s32 158 157 
+add.s64 141 
+setp.lt.s32 160 161 
+bra 
+bra.uni 
+ld.global.s32 162 
+add.s64 27 166 
+ld.global.u8 167 
+setp.ne.s16 168 
+bra 
+add.s64 29 166 
+shl.b64 166 
+add.s64 24 172 
+ld.global.u32 34 
+add.s32 174 
+st.global.u32 175 173 
+st.global.u8 37 171 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 160 
+add.s32 179 178 
+add.s64 162 
+setp.lt.s32 181 182 
+bra 
+bra.uni 
+ld.global.s32 183 
+add.s64 27 187 
+ld.global.u8 188 
+setp.ne.s16 189 
+bra 
+add.s64 29 187 
+shl.b64 187 
+add.s64 24 193 
+ld.global.u32 34 
+add.s32 195 
+st.global.u32 196 194 
+st.global.u8 37 192 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 181 
+add.s32 200 199 
+add.s64 183 
+setp.lt.s32 202 203 
+bra 
+bra.uni 
+ld.global.s32 204 
+add.s64 27 208 
+ld.global.u8 209 
+setp.ne.s16 210 
+bra 
+add.s64 29 208 
+shl.b64 208 
+add.s64 24 214 
+ld.global.u32 34 
+add.s32 216 
+st.global.u32 217 215 
+st.global.u8 37 213 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 202 
+add.s32 221 220 
+add.s64 204 
+setp.lt.s32 223 224 
+bra 
+bra.uni 
+ld.global.s32 225 
+add.s64 27 229 
+ld.global.u8 230 
+setp.ne.s16 231 
+bra 
+add.s64 29 229 
+shl.b64 229 
+add.s64 24 235 
+ld.global.u32 34 
+add.s32 237 
+st.global.u32 238 236 
+st.global.u8 37 234 
+ld.global.u32 31 
+ld.global.u32 19 
+bra.uni 
+add.s32 223 
+add.s32 242 241 
+add.s64 225 
+setp.lt.s32 244 245 
+bra 
+bra.uni 
+ret 

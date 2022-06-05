@@ -1,0 +1,85 @@
+ld.param.u32 
+mov.u32 
+shl.b32 1 
+mov.u32 
+add.s32 2 3 
+setp.ge.s32 4 0 
+bra 
+ld.param.u64 
+cvta.to.global.u64 7 
+cvt.s64.s32 4 
+add.s64 8 9 
+ld.global.u8 10 
+setp.eq.s16 11 
+bra 
+ld.param.u64 
+cvta.to.global.u64 14 
+mov.u16 
+st.global.u8 16 10 
+shl.b64 9 
+add.s64 15 18 
+ld.global.u32 19 
+setp.lt.s32 20 
+bra 
+ld.param.u64 
+cvta.to.global.u64 23 
+ld.param.u64 
+ld.param.u64 
+cvta.to.global.u64 26 
+ld.param.u64 
+cvta.to.global.u64 28 
+cvta.to.global.u64 25 
+add.s64 19 
+ld.global.u32 19 
+shl.b64 9 
+add.s64 24 33 
+mul.wide.s32 32 
+add.s64 30 35 
+mov.u16 
+mov.u32 32 
+bra.uni 
+ld.global.s32 36 
+add.s64 27 40 
+ld.global.u8 41 
+setp.ne.s16 42 
+bra 
+add.s32 38 
+add.s32 32 20 
+add.s64 36 
+setp.lt.s32 45 46 
+bra 
+bra.uni 
+ld.global.s32 47 
+add.s64 27 51 
+ld.global.u8 52 
+setp.ne.s16 53 
+bra 
+add.s32 45 
+add.s32 32 20 
+add.s64 47 
+setp.lt.s32 56 57 
+bra 
+bra.uni 
+ld.global.s32 58 
+add.s64 27 62 
+ld.global.u8 63 
+setp.ne.s16 64 
+bra 
+add.s32 56 
+add.s32 32 20 
+add.s64 58 
+setp.lt.s32 67 68 
+bra 
+bra.uni 
+ld.global.s32 69 
+add.s64 27 73 
+ld.global.u8 74 
+setp.ne.s16 75 
+bra 
+add.s32 67 
+add.s32 32 20 
+add.s64 69 
+setp.lt.s32 78 79 
+bra 
+bra.uni 
+ret 

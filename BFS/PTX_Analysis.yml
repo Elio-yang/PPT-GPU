@@ -1,0 +1,159 @@
+- Function:
+  Name: cudaMalloc
+  BlockCount: 1
+  Blocks: 
+  - entry:
+    - mov.u32 %r1 999
+    - st.param.b32 [func_retval0+0] %r1
+    - ret
+- Function:
+  Name: cudaFuncGetAttributes
+  BlockCount: 1
+  Blocks: 
+  - entry:
+    - mov.u32 %r1 999
+    - st.param.b32 [func_retval0+0] %r1
+    - ret
+- Function:
+  Name: cudaDeviceGetAttribute
+  BlockCount: 1
+  Blocks: 
+  - entry:
+    - mov.u32 %r1 999
+    - st.param.b32 [func_retval0+0] %r1
+    - ret
+- Function:
+  Name: cudaGetDevice
+  BlockCount: 1
+  Blocks: 
+  - entry:
+    - mov.u32 %r1 999
+    - st.param.b32 [func_retval0+0] %r1
+    - ret
+- Function:
+  Name: cudaOccupancyMaxActiveBlocksPerMultiprocessor
+  BlockCount: 1
+  Blocks: 
+  - entry:
+    - mov.u32 %r1 999
+    - st.param.b32 [func_retval0+0] %r1
+    - ret
+- Function:
+  Name: cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+  BlockCount: 1
+  Blocks: 
+  - entry:
+    - mov.u32 %r1 999
+    - st.param.b32 [func_retval0+0] %r1
+    - ret
+- Function:
+  Name: _Z6KernelP4NodePiPbS2_S2_S1_i
+  BlockCount: 8
+  Blocks: 
+  - entry:
+    - ld.param.u32 %r12 [_Z6KernelP4NodePiPbS2_S2_S1_i_param_6]
+    - mov.u32 %r13 %ctaid.x
+    - shl.b32 %r14 %r13 9
+    - mov.u32 %r15 %tid.x
+    - add.s32 %r1 %r14 %r15
+    - setp.ge.s32 %p1 %r1 %r12
+    - bra LBB6_7
+  - land.lhs.true:
+    - ld.param.u64 %rd20 [_Z6KernelP4NodePiPbS2_S2_S1_i_param_2]
+    - cvta.to.global.u64 %rd4 %rd20
+    - cvt.s64.s32 %rd7 %r1
+    - add.s64 %rd8 %rd4 %rd7
+    - ld.global.u8 %rs1 [..%rd8..]
+    - setp.eq.s16 %p2 %rs1 0
+    - bra LBB6_7
+  - if.then:
+    - ld.param.u64 %rd16 [_Z6KernelP4NodePiPbS2_S2_S1_i_param_0]
+    - cvta.to.global.u64 %rd6 %rd16
+    - mov.u16 %rs2 0
+    - st.global.u8 [..%rd8..] %rs2
+    - shl.b64 %rd22 %rd7 3
+    - add.s64 %rd9 %rd6 %rd22
+    - ld.global.u32 %r23 [..%rd9..+4]
+    - setp.lt.s32 %p3 %r23 1
+    - bra LBB6_7
+  - for.body.lr.ph:
+    - ld.param.u64 %rd17 [_Z6KernelP4NodePiPbS2_S2_S1_i_param_5]
+    - cvta.to.global.u64 %rd1 %rd17
+    - ld.param.u64 %rd18 [_Z6KernelP4NodePiPbS2_S2_S1_i_param_1]
+    - ld.param.u64 %rd19 [_Z6KernelP4NodePiPbS2_S2_S1_i_param_4]
+    - cvta.to.global.u64 %rd2 %rd19
+    - ld.param.u64 %rd21 [_Z6KernelP4NodePiPbS2_S2_S1_i_param_3]
+    - cvta.to.global.u64 %rd3 %rd21
+    - cvta.to.global.u64 %rd5 %rd18
+    - add.s64 %rd10 %rd9 4
+    - ld.global.u32 %r22 [..%rd9..]
+    - shl.b64 %rd23 %rd7 2
+    - add.s64 %rd11 %rd1 %rd23
+    - mul.wide.s32 %rd24 %r22 4
+    - add.s64 %rd29 %rd5 %rd24
+    - mov.u16 %rs4 1
+    - mov.u32 %r21 %r22
+    - bra.uni LBB6_4
+  - if.end:
+    - add.s32 %r21 %r21 1
+    - add.s32 %r18 %r22 %r23
+    - add.s64 %rd29 %rd29 4
+    - setp.lt.s32 %p5 %r21 %r18
+    - bra LBB6_4
+    - bra.uni LBB6_7
+  - for.body:
+    - ld.global.s32 %rd14 [..%rd29..]
+    - add.s64 %rd25 %rd2 %rd14
+    - ld.global.u8 %rs3 [..%rd25..]
+    - setp.ne.s16 %p4 %rs3 0
+    - bra LBB6_6
+  - if.then18:
+    - add.s64 %rd26 %rd3 %rd14
+    - shl.b64 %rd27 %rd14 2
+    - add.s64 %rd28 %rd1 %rd27
+    - ld.global.u32 %r16 [..%rd11..]
+    - add.s32 %r17 %r16 1
+    - st.global.u32 [..%rd28..] %r17
+    - st.global.u8 [..%rd26..] %rs4
+    - ld.global.u32 %r23 [..%rd10..]
+    - ld.global.u32 %r22 [..%rd9..]
+    - bra.uni LBB6_6
+  - if.end26:
+    - ret
+- Function:
+  Name: _Z7Kernel2PbS_S_S_i
+  BlockCount: 4
+  Blocks: 
+  - entry:
+    - ld.param.u32 %r2 [_Z7Kernel2PbS_S_S_i_param_4]
+    - mov.u32 %r3 %ctaid.x
+    - shl.b32 %r4 %r3 9
+    - mov.u32 %r5 %tid.x
+    - add.s32 %r1 %r4 %r5
+    - setp.ge.s32 %p1 %r1 %r2
+    - bra LBB7_3
+  - land.lhs.true:
+    - ld.param.u64 %rd10 [_Z7Kernel2PbS_S_S_i_param_1]
+    - cvta.to.global.u64 %rd3 %rd10
+    - cvt.s64.s32 %rd12 %r1
+    - add.s64 %rd5 %rd3 %rd12
+    - ld.global.u8 %rs1 [..%rd5..]
+    - setp.eq.s16 %p2 %rs1 0
+    - bra LBB7_3
+  - if.then:
+    - ld.param.u64 %rd8 [_Z7Kernel2PbS_S_S_i_param_0]
+    - ld.param.u64 %rd9 [_Z7Kernel2PbS_S_S_i_param_3]
+    - cvta.to.global.u64 %rd1 %rd9
+    - ld.param.u64 %rd11 [_Z7Kernel2PbS_S_S_i_param_2]
+    - cvta.to.global.u64 %rd2 %rd11
+    - cvta.to.global.u64 %rd4 %rd8
+    - add.s64 %rd6 %rd2 %rd12
+    - add.s64 %rd7 %rd4 %rd12
+    - mov.u16 %rs2 1
+    - st.global.u8 [..%rd7..] %rs2
+    - st.global.u8 [..%rd6..] %rs2
+    - st.global.u8 [..%rd1..] %rs2
+    - mov.u16 %rs3 0
+    - st.global.u8 [..%rd5..] %rs3
+  - if.end:
+    - ret

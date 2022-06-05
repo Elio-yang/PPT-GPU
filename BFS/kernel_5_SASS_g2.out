@@ -1,0 +1,66 @@
+kernel name: Kernel
+
+- Total GPU computations is divided into 8 thread block(s) running on 8 SM(s)
+
+- Modeled SM-0 running 1 thread block(s):
+	* allocated max active thread block(s): 1
+	* allocated max active warps per thread block: 16
+
+- Occupancy of SM-0:
+	* Thread block Limit SM: 32
+	* Thread block limit registers: 5
+	* Thread block limit shared memory: 32
+	* Thread block limit warps: 4
+	* theoretical max active thread block(s): 4
+	* theoretical max active warps per SM: 64
+	* theoretical occupancy: 100 %
+	* achieved active warps per SM: 5.44
+	* achieved occupancy: 8.5 %
+
+- Memory Performance:
+	* unified L1 cache hit rate: 55.68 %
+	* unified L1 cache hit rate for read transactions (global memory accesses): 69.48 %
+	* L2 cache hit rate: 73.56 %
+
+	* Global Memory Requests:
+		** GMEM read requests: 2026
+		** GMEM write requests: 769
+		** GMEM total requests: 2795
+
+	* Global Memory Transactions:
+		** GMEM read transactions: 2323
+		** GMEM write transactions: 881
+		** GMEM total transactions: 3204
+
+	* Global Memory Divergence:
+		** number of read transactions per read requests: 1.15 (3.59%)
+		** number of write transactions per write requests: 1.15 (3.59%)
+
+	* L2 Cache Transactions (for global memory accesses):
+		** L2 read transactions: 709
+		** L2 write transactions: 881
+		** L2 total transactions: 1590
+
+	* DRAM Transactions (for global memory accesses):
+		** DRAM total transactions: 420
+
+	* Total number of global atomic requests: 0
+	* Total number of global reduction requests: 0
+	* Global memory atomic and reduction transactions: 0
+
+- Kernel cycles:
+	* GPU active cycles (min): 6,335
+	* GPU active cycles (max): 11,967
+	* SM active cycles (sum): 95,736
+	* SM elapsed cycles (sum): 957,360
+
+- Warp instructions executed: 16,112
+- Thread instructions executed: 515,584
+- Instructions executed per clock cycle (IPC): 0.168
+- Clock cycles per instruction (CPI):  5.942
+- Total instructions executed per seconds (MIPS): 201
+- Kernel execution time: 797.8 us
+
+- Simulation Time:
+	* Memory model: 0.098 sec, 00:00:00
+	* Compute model: 0.421 sec, 00:00:00

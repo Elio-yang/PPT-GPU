@@ -1,0 +1,66 @@
+kernel name: Kernel
+
+- Total GPU computations is divided into 8 thread block(s) running on 8 SM(s)
+
+- Modeled SM-0 running 1 thread block(s):
+	* allocated max active thread block(s): 1
+	* allocated max active warps per thread block: 16
+
+- Occupancy of SM-0:
+	* Thread block Limit SM: 32
+	* Thread block limit registers: 5
+	* Thread block limit shared memory: 32
+	* Thread block limit warps: 4
+	* theoretical max active thread block(s): 4
+	* theoretical max active warps per SM: 64
+	* theoretical occupancy: 100 %
+	* achieved active warps per SM: 9.94
+	* achieved occupancy: 15.52 %
+
+- Memory Performance:
+	* unified L1 cache hit rate: 83.29 %
+	* unified L1 cache hit rate for read transactions (global memory accesses): 88.04 %
+	* L2 cache hit rate: 93.08 %
+
+	* Global Memory Requests:
+		** GMEM read requests: 7484
+		** GMEM write requests: 2968
+		** GMEM total requests: 10452
+
+	* Global Memory Transactions:
+		** GMEM read transactions: 37228
+		** GMEM write transactions: 18508
+		** GMEM total transactions: 55736
+
+	* Global Memory Divergence:
+		** number of read transactions per read requests: 4.97 (15.53%)
+		** number of write transactions per write requests: 6.24 (19.5%)
+
+	* L2 Cache Transactions (for global memory accesses):
+		** L2 read transactions: 4453
+		** L2 write transactions: 18508
+		** L2 total transactions: 22961
+
+	* DRAM Transactions (for global memory accesses):
+		** DRAM total transactions: 1589
+
+	* Total number of global atomic requests: 0
+	* Total number of global reduction requests: 0
+	* Global memory atomic and reduction transactions: 0
+
+- Kernel cycles:
+	* GPU active cycles (min): 32,549
+	* GPU active cycles (max): 64,395
+	* SM active cycles (sum): 515,160
+	* SM elapsed cycles (sum): 5,151,600
+
+- Warp instructions executed: 43,720
+- Thread instructions executed: 1,399,040
+- Instructions executed per clock cycle (IPC): 0.085
+- Clock cycles per instruction (CPI):  11.783
+- Total instructions executed per seconds (MIPS): 101
+- Kernel execution time: 4293.0 us
+
+- Simulation Time:
+	* Memory model: 0.43 sec, 00:00:00
+	* Compute model: 2.931 sec, 00:00:02

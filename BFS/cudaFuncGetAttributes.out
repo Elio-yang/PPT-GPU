@@ -1,0 +1,4 @@
+--
+mov.u32 %r1 999
+st.param.b32 [func_retval0+0] %r1
+ret

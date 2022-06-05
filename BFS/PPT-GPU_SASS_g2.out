@@ -1,0 +1,69 @@
+
+Kernel[1]: Running on rank 1
+
+Kernel[3]: Running on rank 1
+
+Kernel[5]: Running on rank 1
+
+Kernel[7]: Running on rank 1
+
+Kernel[9]: Running on rank 1
+
+Kernel[11]: Running on rank 1
+
+Kernel[13]: Running on rank 1
+
+Kernel[15]: Running on rank 1
+
+Kernel[1]: Running on rank 1
+
+Kernel[3]: Running on rank 1
+
+Kernel[5]: Running on rank 1
+
+Kernel[7]: Running on rank 1
+
+Kernel[9]: Running on rank 1
+
+Kernel[11]: Running on rank 1
+
+Kernel[13]: Running on rank 1
+
+Kernel[15]: Running on rank 1
+
+=========================================
+SIMULATION COMPLETED IN: 8.678547620773315 SECONDS
+SIMULATED EVENTS: 16.0
+EVENTS PER SECOND: 1.8436264567704586
+=========================================
+
+====================================================
+----------------------PPT-GPU-----------------------
+-----------------SIMIAN PDES ENGINE-----------------
+====================================================
+MPI: 2 Ranks
+Conservative Mode Enabled
+====================================================
+
+
+Kernel[0]: Running on rank 0
+
+Kernel[2]: Running on rank 0
+
+Kernel[4]: Running on rank 0
+
+Kernel[6]: Running on rank 0
+
+Kernel[8]: Running on rank 0
+
+Kernel[10]: Running on rank 0
+
+Kernel[12]: Running on rank 0
+
+Kernel[14]: Running on rank 0
+
+=========================================
+SIMULATION COMPLETED IN: 8.678539991378784 SECONDS
+SIMULATED EVENTS: 16.0
+EVENTS PER SECOND: 1.843628077521601
+=========================================

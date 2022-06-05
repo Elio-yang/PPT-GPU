@@ -1,0 +1,29 @@
+ld.param.u32 
+mov.u32 
+shl.b32 1 
+mov.u32 
+add.s32 2 3 
+setp.ge.s32 4 0 
+bra 
+ld.param.u64 
+cvta.to.global.u64 7 
+cvt.s64.s32 4 
+add.s64 8 9 
+ld.global.u8 10 
+setp.eq.s16 11 
+bra 
+ld.param.u64 
+ld.param.u64 
+cvta.to.global.u64 15 
+ld.param.u64 
+cvta.to.global.u64 17 
+cvta.to.global.u64 14 
+add.s64 18 9 
+add.s64 19 9 
+mov.u16 
+st.global.u8 22 21 
+st.global.u8 22 20 
+st.global.u8 22 16 
+mov.u16 
+st.global.u8 26 10 
+ret 
