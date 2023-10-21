@@ -5,8 +5,8 @@
 ## Configure Git
 ```bash
 git config --global user.name "elio"
-git config --global user.email "2925539854@qq.com"
-ssh-keygen -t rsa -C "2925539854@qq.com"
+git config --global user.email "xxxx"
+ssh-keygen -t rsa -C "xxxx"
 ```
 
 ## Basic Dependencies
