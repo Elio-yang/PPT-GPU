@@ -4,7 +4,7 @@
 
 ## Configure Git
 ```bash
-git config --global user.name "elio"
+git config --global user.name "xxxx"
 git config --global user.email "xxxx"
 ssh-keygen -t rsa -C "xxxx"
 ```
