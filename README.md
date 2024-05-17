@@ -2,13 +2,6 @@
 
 # Set up environments for PPT-GPU (SC'21)
 
-## Configure Git
-```bash
-git config --global user.name "xxxx"
-git config --global user.email "xxxx"
-ssh-keygen -t rsa -C "xxxx"
-```
-
 ## Basic Dependencies
 
 Get ``glib2.0`` using
